@@ -1,9 +1,6 @@
-/* index css */
-
 body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
-  width: 1600px;
   margin: auto;
 }
 
@@ -15,32 +12,44 @@ body {
   margin-right: auto;
 }
 
-/* header------------------------------------------------------------------ */
+/* index css----------------------------------------------------------------- */
+
+/* header-------------------------------------------------------------------- */
 header {
   border-bottom: 1px solid #ececec;
 }
 
-.site,
-.site-logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--blue);
 }
 
-.logo,
-.site-nav {
-  display: flex;
+.logo span {
+  color: var(--text-black);
 }
 
 .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.nav-item .link {
   color: var(--text-black);
+}
+
+.contact-item .link {
+  color: var(--text-grey);
 }
 
 .link:hover,
@@ -48,50 +57,36 @@ header {
   color: var(--blue);
 }
 
-.site-nav .link.current {
+.link.current {
   color: var(--blue);
 }
 
-.logo,
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--blue);
+.site,
+.nav,
+.nav-list,
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-studio {
-  color: var(--text-black);
-}
-
-.logo {
-  margin-right: 93px;
-}
-
-.site-nav .item + .item {
+.nav-list .item + .item,
+.contact-list .item + .item {
   margin-left: 50px;
 }
 
-/* hero------------------------------------------------------------------------- */
+.nav-list {
+  margin-left: 93px;
+}
 
+/* hero---------------------------------------------------------------------- */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/people_header.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--dop-page-color);
 }
 
-.title-hero {
-  display: flex;
+.hero-title {
   margin: 0 auto;
   width: 696px;
   min-height: 120px;
@@ -100,97 +95,112 @@ header {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
-  color: var(--text-white);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  color: var(--text-white);
 }
 
-.btn-hero {
+.hero-btn {
   display: flex;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   padding: 10px 32px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--text-white);
   background: var(--blue);
   border-radius: 4px;
   border-color: #000000;
-  outline: none;
+  overflow: none;
 }
 
-/* преимущества-------------------------------------------------------------- */
+/* benefits------------------------------------------------------------------ */
 .benefits {
   padding-top: 94px;
 }
 
-.list-benefits {
+.benefits-list {
   display: flex;
-  justify-content: space-evenly;
 }
 
-.item-benefits {
+.benefits-item {
   width: 270px;
 }
 
-.item-benefits + .item-benefits {
+.benefits-list .item + .item {
   margin-left: 30px;
-  min-height: 101px;
 }
 
-.title-benefits {
+.benefits-title title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--text-black);
 }
 
-.text-benefits {
+.benefits-text {
+  margin-top: 10px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
   color: var(--text-grey);
-  margin-top: 10px;
 }
 
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-black);
-}
-
-/* чем мы занимаемся */
+/* work--------------------------------------------=------------------------- */
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.list-work {
+.work-list {
   display: flex;
-  margin: 50px;
+  margin-top: 50px;
   justify-content: center;
 }
 
-.item-work + .item-work {
+.work-list .item + .item {
   margin-left: 30px;
 }
 
-/* команда--------------------------------------------------------------------- */
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+  color: var(--text-black);
+}
+
+/* team---------------------------------------------------------------------- */
 .team {
-  background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-black);
 }
 
 .team-list {
@@ -199,63 +209,61 @@ header {
   margin-top: 50px;
 }
 
-.team-item + .team-item {
+.team-list .item + .item {
   margin-left: 30px;
 }
 
 .team-item {
+  width: 270px;
+
   background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
   border-radius: 0px 0px 4px 4px;
 }
 
 .team-content {
-  margin: 30px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.title-team {
+.content-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--text-black);
 }
 
-.text-team {
-  margin-top: 10px;
+.content-text {
+  padding-top: 10px;
 
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--text-grey);
 }
 
-/* футер---------------------------------------------------------------------------- */
+/* footer-------------------------------------------------------------------- */
+footer {
+  background: var(--dop-page-color);
+}
+
 footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-studio {
-  color: var(--header-color);
-}
-
-.logo .footer-logo {
-  color: var(--blue);
-}
-
-footer {
-  background: #2f303a;
-}
-
-.address {
-  font-style: 400;
-  font-size: 14px;
-  line-height: 1.7;
-
-  color: var(--white-color-);
+.footer span {
+  color: var(--text-white);
 }
 
 .address,
@@ -268,51 +276,59 @@ footer {
 }
 
 .address {
-  color: var(--header-color);
   margin-top: 20px;
+
+  color: var(--text-white);
 }
 
 .contacts {
-  color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
-/* ====================== portfolio css ====================== */
+/* portfolio css------------------------------------------------------------- */
+
+/* job----------------------------------------------------------------------- */
 .job {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.filter {
+/* filter-list--------------------------------------------------------------- */
+.filter-list {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
-.filter-item + .filter-item {
+.filter-list .item + .item {
   margin-left: 8px;
 }
 
-.btn-filter {
-  display: inline-block;
+.filter-btn {
   padding: 6px 12px;
+
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
   color: var(--text-black);
-  background: #f5f4fa;
+
   border-radius: 4px;
 }
 
-.btn-filter:hover,
-.btn-filter:focus {
-  color: var(--header-color);
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--blue);
+  color: var(--text-white);
 }
 
-/* работы------------------------------------------------------------------------- */
-
-.list {
+/* job-list------------------------------------------------------------------ */
+.job-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -320,7 +336,7 @@ footer {
   margin-top: calc(-1 * var(--list-item-gap));
 }
 
-.list-item {
+.job-item {
   flex-basis: calc(100% / 3 - var(--list-item-gap));
 
   margin-left: var(--list-item-gap);
