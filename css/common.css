@@ -7,6 +7,8 @@
   --dop-page-color: #2f303a;
   --page-color-op10: 245, 244, 250, 1;
   --list-item-gap: 30px;
+  --social-icon-color: #afb1b8;
+  --social-footer-icon: rgba(255, 255, 255, 0.1);
 }
 
 .visually-hidden {
