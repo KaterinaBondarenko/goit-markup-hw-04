@@ -79,7 +79,7 @@ header {
   margin-left: 93px;
 }
 
-.contacts-icon {
+.contact-item .contacts-icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -87,6 +87,11 @@ header {
 .contacts-icon .contact-item:hover,
 .contacts-icon .contact-item:focus {
   fill: var(--blue-text);
+}
+
+.link {
+  display: flex;
+  align-items: center;
 }
 
 /* hero---------------------------------------------------------------------- */
@@ -240,7 +245,6 @@ header {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
 }
 
@@ -340,8 +344,11 @@ header {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
   margin-top: 50px;
+}
+
+.clients-list .item + .item {
+  margin-left: 30px;
 }
 
 .clients-link {
@@ -512,6 +519,12 @@ footer .container {
   margin-top: var(--list-item-gap);
 
   border-radius: 1px solid #eeeeee;
+}
+
+.job-item:hover,
+.job-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-project {
